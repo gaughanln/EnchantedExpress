@@ -1,9 +1,10 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import train from "../../assets/Enchanted.png";
-import Stack from 'react-bootstrap/Stack';
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+// import Stack from 'react-bootstrap/Stack';
 import train1 from '../../assets/sampleTrain1.png';
-import train2 from '../../assets/sampleTrain2.webp';
 import train3 from '../../assets/sampleTrain3.jpeg';
 import train4 from '../../assets/sampleTrain4.jpeg';
 
@@ -39,19 +40,21 @@ function Cards() {
   return (
     <>
    
-    <div className ="container ">
-    <Stack direction="horizontal" gap={3}>
+    <Container>
+      <Row>
       {cardInfo.map((card, index) => (
-        <Card key={index} style={{ width: "18rem" }} className={`card-${card.color}`}>
+        <Col key={index} sm={6} lg={3}>
+        <Card className={`card-${card.color}`}>
           <Card.Img variant="top" src={card.image} />
           <Card.Body>
             <Card.Title className="card-text">{card.text}</Card.Title>
             <p> We can add more text here if we want</p>
           </Card.Body>
         </Card>
+      </Col>
       ))}
-      </Stack>
-      </div>
+      </Row>
+      </Container>
       
     </>
   );

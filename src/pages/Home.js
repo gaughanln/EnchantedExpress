@@ -14,11 +14,11 @@ import Cards from "../components/Cards/Cards";
 function Home() {
   return (
     <>
-      <div className="container fluid ">
-        <img src={trainLogo} className="homeLogo" />
-      </div>
+      <Container classname ="fluid">
+        <img src={trainLogo} className="homeLogo img-fluid" alt="Enchanted Express Logo" />
+      </Container>
       <br/>
-      <div className="container fluid top-section">
+      <Container className="fluid top-section">
         <Row>
           <p ClassName="text-center">
             Enchanted Express is one of the top Train rentals in Houston Texas.
@@ -27,17 +27,16 @@ function Home() {
             making it over 2000 years old. Richard McClintock,{" "}
           </p>
         </Row>
-      </div>
+      </Container>
 
-      <div className="container fluid middle-section">
+      <Container className="fluid middle-section">
         <Cards />
-      </div>
+      </Container>
 
       <br/>
 
-      <div className="container fluid bottom-section">
+      <Container classname="fluid bottom-section">
         <p>
-          {" "}
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the 1500s, when an unknown printer took a galley of type and
@@ -48,7 +47,7 @@ function Home() {
           more recently with desktop publishing software like Aldus PageMaker
           including versions of Lorem Ipsum.
         </p>
-      </div>
+      </Container>
     </>
   );
 }

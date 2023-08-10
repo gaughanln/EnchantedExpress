@@ -46,9 +46,7 @@
   }
 }
 
-Navbar{
-  background-color: #a4138d;
-}
+
 
 /* home page sections */
 .top-section {
@@ -56,21 +54,23 @@ Navbar{
   color: white;
   font-weight: bold;
   border-radius:25px;
-  padding: 15px;
+  padding: 10px;
   font-size: large;
   
 }
 
 .middle-section {
-  padding: 4%;
+  padding: 15px;
   justify-content: center;
   width: fit-content;
+  padding-top: 3%;
+
 }
 .bottom-section {
 background-color: var(--blue);font-size: large;
 color: white;
 border-radius:25px;
-padding: 15px;
+padding: 10px;
 }
 
 
@@ -82,7 +82,6 @@ padding: 15px;
 /* pics */
 
 .homeLogo {
-  justify-content: center;
-  align-items: center;
+ 
   padding-bottom: 1%;
 }
