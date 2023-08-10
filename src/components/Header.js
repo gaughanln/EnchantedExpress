@@ -2,6 +2,9 @@ import React from "react";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+// update where the links go to
+// change header color
+
 
 function Header() {
   return (

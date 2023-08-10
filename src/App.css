@@ -1,3 +1,12 @@
+:root {
+--yellow: #ffba08;
+--red: #d00000;
+--blue: #003f91;
+---blackish: #210f04;
+}
+
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +44,45 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+Navbar{
+  background-color: #a4138d;
+}
+
+/* home page sections */
+.top-section {
+  background-color: var(--blue);
+  color: white;
+  font-weight: bold;
+  border-radius:25px;
+  padding: 15px;
+  font-size: large;
+  
+}
+
+.middle-section {
+  padding: 4%;
+  justify-content: center;
+  width: fit-content;
+}
+.bottom-section {
+background-color: var(--blue);font-size: large;
+color: white;
+border-radius:25px;
+padding: 15px;
+}
+
+
+
+
+
+
+
+/* pics */
+
+.homeLogo {
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1%;
 }

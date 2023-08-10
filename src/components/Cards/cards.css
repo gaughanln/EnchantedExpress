@@ -1,0 +1,16 @@
+.card-pink {
+  background-color: #d3068d;
+}
+.card-blue {
+  background-color: #003f91;
+}
+.card-yellow{
+  background-color: #ffba08;
+}
+.card-red {
+  background-color: #d00000;
+}
+.card-text{
+  color: white;
+  font-weight: bold;
+}
