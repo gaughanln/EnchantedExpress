@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
 
 import Home from './pages/Home';
 import Header from './components/Header';
 import Contact from './components/Contact';
-import Gallery from './components/Gallery'
+import Gallery from './components/Gallery';
 
 
 function App() {
@@ -18,14 +21,14 @@ function App() {
       return <Gallery />;
     } return < Contact/>;
   };
-  // const handlePageChange = (page) => setCurrentPage(page);
+  const handlePageChange = (page) => setCurrentPage(page);
 
 
   return (
 
     
     <div>
-       {/* <Header currentPage={currentPage} handlePageChange={handlePageChange} /> */}
+       <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 
        {renderPage()}
 
